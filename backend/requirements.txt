@@ -1,0 +1,6 @@
+Flask
+Werkzeug
+flask-cors
+pywebview
+requests
+pyinstaller
