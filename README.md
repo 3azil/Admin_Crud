@@ -5,7 +5,7 @@
 - 🧠 **Backend**: Flask + PostgreSQL
 - 💻 **Frontend**: React + Tailwind CSS
 - 🪟 **Desktop UI**: PyWebView
-- 🧊 **База данных**: PostgreSQL (таблица `workers_tb`)
+- 🧊 **База данных**: PostgreSQL
 
 ### 1. Установка зависимостей Python
 
