@@ -21,6 +21,7 @@
 
 ## 🛠️ Стек 
 
+|                  |                          |
 |------------------|--------------------------|
 | Backend          | Python(Flask) + Postgre  |
 | Frontend         | React + Tailwind CSS     |
