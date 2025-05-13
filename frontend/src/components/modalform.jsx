@@ -69,14 +69,13 @@ export default function ModalForm({ isOpen, onClose, mode, onSubmit, workerData 
   return (
     <dialog id="my_modal_3" className="modal bg-black/40" open={isOpen}>
       <div className="modal-box">
-        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={onClose}>✕</button>
-        <h3 className="font-bold text-lg py-4">{mode === 'edit' ? 'Edit Worker' : 'Worker Details'}</h3>
+        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={onClose}>✕</button>        <h3 className="font-bold text-lg py-4">{mode === 'edit' ? 'Изменить Работника:' : 'Данные Работника:'}</h3>
 
         <form method="dialog" onSubmit={handleSubmit}>
           {error && <p className="text-red-500 font-semibold mb-2">{error}</p>}
 
           <label className="input input-bordered flex items-center my-4 gap-2">
-            Name
+            Имя
             <input
               type="text"
               className="grow"
@@ -98,7 +97,7 @@ export default function ModalForm({ isOpen, onClose, mode, onSubmit, workerData 
           </label>
 
           <label className="input input-bordered flex items-center my-4 gap-2">
-            Job
+            Должность
             <input
               type="text"
               className="grow"
@@ -109,8 +108,8 @@ export default function ModalForm({ isOpen, onClose, mode, onSubmit, workerData 
           </label>
 
           <div className="flex mb-4 justify-between">
-            <label className="input input-bordered flex mr-4 items-center gap-2">
-              Rate
+            <label className="input input-bordered flex mr-2 items-center gap-2">
+              📊
               <input
                 type="number"
                 className="grow"
@@ -123,20 +122,20 @@ export default function ModalForm({ isOpen, onClose, mode, onSubmit, workerData 
             </label>
 
             <select
-              value={status ? 'Active' : 'Inactive'}
+              value={status ? 'Active' : 'ᶻ 𝗓 𐰁 .ᐟ'}
               className="select select-bordered mr-40 w-full max-w-xs"
               onChange={handleStatusChange}
             >
-              <option>Inactive</option>
+              <option>ᶻ 𝗓 𐰁 .ᐟ</option>
               <option>Active</option>
             </select>
           </div>
 
           <button type="submit" className="btn btn-success">
-            {mode === 'edit' ? 'Save Changes' : 'Add Worker'}
+            {mode === 'edit' ? 'Сохранить Изменения' : 'Создать Аккаунт'}
           </button>
         </form>
       </div>
     </dialog>
   );
-}
+};
